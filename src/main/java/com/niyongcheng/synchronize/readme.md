@@ -143,3 +143,12 @@ you can the monitorenter and monitorexit for the synchronize block.(line 109,lin
 this is JVM feature for Synchronize
 
 for the synchronize method, it will use ACC_SYNCHRONIZED flag(line 75).
+
+Synchronize is lock the object, for the object, the detail of its head will include its four lock status:
+1: no lock
+2: bias lock(jdk 1.6)
+3: light-weight lock(jdk 1.6)
+4: height-weight lock
+
+for the detail of the lock,objet head and synchronize, 
+https://my.oschina.net/u/3995125/blog/3183054
